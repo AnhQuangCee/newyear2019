@@ -8,13 +8,30 @@ body{
 	position: relative;
 	background-image: radial-gradient(#ed213a, #7a2828);
 }
-.header{
+.header .pick img{
+	margin-left: 70%;
+	height: 30%;
+	width: 30%;
+}
 
+.header .year img{
+	margin-left: 90%;
+	height: 40%;
+	width: 40%;
+}
+
+.header .chu img{
+	margin-left: 100%;
+	height: 30%;
+	width: 30%;
 }
 .field{
 	position: absolute;
 	top: 180px;
 	left: 100px;
+}
+.countdown{
+	margin-top: 60px;
 }
 .field h1{
 	text-transform: capitalize;
