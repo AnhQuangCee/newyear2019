@@ -71,6 +71,14 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	padding-left: 130px;
 }
+.field .copyright{
+	font-size: 18px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-style: thin;
+	padding-top: 40px;
+	padding-left: 25%;
+}
 .footer{
 	position: absolute;
 	bottom: 0;
