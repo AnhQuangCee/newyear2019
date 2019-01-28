@@ -52,7 +52,7 @@ svgLogoAnimation.add({
 	duration: 2000,
 	easing: 'easeOutSine'
 });
-
+// Feb 5, 2019 00:00:00
 //DAQ Counntdown web 2019
 var countDownDate = new Date("Feb 5, 2019 00:00:00").getTime();
 var x = setInterval(function(){
@@ -68,9 +68,24 @@ var x = setInterval(function(){
 	document.getElementById("hours").innerHTML = hours;
 	document.getElementById("minutes").innerHTML = minutes;
 	document.getElementById("senconds").innerHTML = seconds;
+
+	document.getElementById("day1").innerHTML = "Days";
+	document.getElementById("hours1").innerHTML = "Hours";
+	document.getElementById("minutes1").innerHTML = "Minutes";
+	document.getElementById("senconds1").innerHTML = "Seconds";
+
 	if (distance < 0) {
 		clearInterval(x);
-		document.getElementById("demo").innerHTML = "HAPPY NEW YEAR 2019";
+		document.getElementById("day").innerHTML = "2";
+		document.getElementById("hours").innerHTML = "0";
+		document.getElementById("minutes").innerHTML = "1";
+		document.getElementById("senconds").innerHTML = "9";
+
+		//Clear info
+		document.getElementById("day1").innerHTML = "";
+		document.getElementById("hours1").innerHTML = "";
+		document.getElementById("minutes1").innerHTML = "";
+		document.getElementById("senconds1").innerHTML = "";
 	}
 });
 

@@ -12,6 +12,11 @@
 </head>
 <body >
 	<!-- <canvas class="fireworks"></canvas> -->
+	<!-- <div style="visibility:hidden">
+    <audio autoplay loop>
+        <source src="audio/Orange.mp3">
+    </audio> 
+	</div> -->
 	<canvas id="c" class="hello"></canvas>
 	<div class="header">
 		<div class="container">
@@ -73,24 +78,35 @@
 						<div class="row time text">
 							<div class="col-md-3 col-xs-3">
 								<h2 id="day">5</h2>
-								<p>Days</p>
+								<p class="info" id="day1">Days</p>
 							</div>
 							<div class="col-md-3 col-xs-3">
 								<h2 id="hours">19</h2>
-								<p>Hours</p>
+								<p class="info" id="hours1">Hours</p>
 							</div>
 							<div class="col-md-3 col-xs-3">
 								<h2 id="minutes">40</h2>
-								<p>Minutes</p>
+								<p class="info" id="minutes1">Minutes</p>
 							</div>
 							<div class="col-md-3 col-xs-3">
 								<h2 id="senconds">55</h2>
-								<p>Seconds</p>
+								<p class="info" id="senconds1">Seconds</p>
 							</div>
 						</div>
-						<div class="row copyright">
+						<!-- <div class="row copyright">
 							<p>Copyright <i class="far fa-copyright"></i> by DAQ Website 2019</p>
-						</div>
+						</div>-->
+						<div id="wrapper">
+				            <div id="fileWrapper" class="file_wrapper">
+				                <div id="info" style="display: none">
+				                </div>
+				                <label for="uploadedFile"></label>
+				                <input type="file" id="uploadedFile"></input>
+				            </div>
+				            <div id="visualizer_wrapper">
+				                <canvas id='canvas' width="2000" height="2000"></canvas>
+				            </div>
+				        </div>					
 					</div>
 				</div>
 			</div>
@@ -101,6 +117,7 @@
 <div class="footer">
 	<img src="images/wave.png" alt="">
 </div>
+<script src="js/visualizer.js" type="text/javascript"></script>
 <script src="js/anime.js"></script>
 <script src="js/1.js"></script>
 </body>
