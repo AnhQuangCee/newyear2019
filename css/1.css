@@ -92,6 +92,11 @@ body{
 	width: 101%;
 	transform: translateY(80px);
 }
+.fireworks{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
 /*RESPONSIVE*/
 
 /* ----------- iPhone 6 ----------- */
@@ -175,7 +180,7 @@ body{
 		transform: translateY(20px);
 	}
 }
- 
+
 /* Landscape */
 @media only screen
   and (min-device-width: 375px) 
