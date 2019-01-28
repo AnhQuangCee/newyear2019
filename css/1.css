@@ -92,12 +92,22 @@ body{
 	width: 101%;
 	transform: translateY(80px);
 }
-.fireworks{
+/*.fireworks{
+	position: absolute;
+	top: 0;
+	left: 0;
+}*/
+canvas {
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	cursor: pointer; 
 	position: absolute;
 	top: 0;
 	left: 0;
 }
-/*RESPONSIVE*/
+
+/*RESPONSIVE
 
 /* ----------- iPhone 6 ----------- */
  
