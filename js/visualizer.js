@@ -71,7 +71,7 @@ Visualizer.prototype = {
             e.dataTransfer.dropEffect = 'copy';
         }, false);
         dropContainer.addEventListener("dragleave", function() {
-            document.getElementById('fileWrapper').style.opacity = 0.2;
+            document.getElementById('fileWrapper').style.opacity = 0.5;
             that._updateInfo(that.info, false);
         }, false);
         dropContainer.addEventListener("drop", function(e) {
@@ -149,7 +149,7 @@ Visualizer.prototype = {
         };
         this._updateInfo('Playing ' + this.fileName, false);
         this.info = 'Playing ' + this.fileName;
-        document.getElementById('fileWrapper').style.opacity = 0.1;
+        document.getElementById('fileWrapper').style.opacity = 0.3;
         this._drawSpectrum(analyser);
     },
     _drawSpectrum: function(analyser) {

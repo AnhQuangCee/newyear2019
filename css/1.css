@@ -125,6 +125,15 @@ canvas {
 	top: -400px;
 	left: 22%;
 }
+.cus{
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    padding-left: 90%;
+}
+#fileWrapper input[type="file"]{
+	display: none;
+}
 /*RESPONSIVE
 
 /* ----------- iPhone 6 ----------- */

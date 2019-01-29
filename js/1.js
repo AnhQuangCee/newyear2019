@@ -8,6 +8,19 @@ var svgLogo6 = document.querySelector('.svgLogo polygon.p0');
 var svgLogo7 = document.querySelector('.svgLogo text.t1');
 var svgLogo5 = document.querySelector('.svgLogo path.st5');
 
+// $(document).keydown(function(event){
+//     if(event.keyCode==123){
+//         return false;
+//     }
+//     else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
+//              return false;
+//     }
+// });
+
+// $(document).on("contextmenu",function(e){        
+//    e.preventDefault();
+// });
+
 var svgLogoAnimation = anime.timeline();
 svgLogoAnimation.add({
 	targets: svgLogo,
