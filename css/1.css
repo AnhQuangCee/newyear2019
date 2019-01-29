@@ -28,22 +28,13 @@ body{
 }
 
 /*FIELD*/
-.field{
-	position: absolute;
-	top: 180px;
-	left: 100px;
-}
-.countdown{
-	margin-top: 60px;
-}
 .field h1{
 	text-transform: capitalize;
 	font-size: 50px;
 	font-family: 'Montserrat', sans-serif;
 	color: white;
 	padding-left: 200px;
-}
-.field .container .svgLogo path,polygon{
+}.field .container .svgLogo path,polygon{
 	fill: none;
 	stroke: white;
 }
@@ -52,8 +43,6 @@ body{
 	fill: white;
 }
 .field .container .svgLogo{
-	z-index: 1;
-	position: absolute;
 	top: 0;
 	left: 0;
 	height: 100%;
@@ -82,16 +71,19 @@ body{
 	padding-left: 25%;
 }
 
+
 /*FOOTER*/
 .footer{
-	position: absolute;
-	bottom: 0;
-	left: 0;
+	padding: 0px;
+	margin-bottom: 0px;
+}
+.footer .wave{
+	padding: 0px;
+	margin: 0px;
 }
 .footer img{
-	height: 101%;
-	width: 101%;
-	transform: translateY(80px);
+	height: 300%;
+	width: 300%;
 }
 /*.fireworks{
 	position: absolute;
@@ -134,6 +126,7 @@ canvas {
 #fileWrapper input[type="file"]{
 	display: none;
 }
+
 /*RESPONSIVE
 
 /* ----------- iPhone 6 ----------- */
@@ -170,19 +163,27 @@ canvas {
 	}
 
 	.header .chu img{
-		margin-left: 40%;
+		margin-left: 30%;
 		height: 70%;
 		width: 70%;
 	}
- 	.field .container .svgLogo{
+
+	/*FIELD*/
+	.field{
+		margin-top: 10%;
+	}
+	.field .container .svgLogo{
+		height: 100%;
+		width: 100%;
+		position: absolute;
 		top: 0;
 		left: 50%;
 		transform: translateX(-50%);
-		height: 120%;
-		width: 120%;
 		opacity: 0.4;
 	}
+
 	.field h1{
+		padding-top: 30%;
 		font-size: 20px;
 		padding-left: 0px;
 	}
@@ -194,11 +195,6 @@ canvas {
 	.field .time p{
 		font-size: 12px;
 		padding-left: 0px;
-	}
-	.field{
-		position: absolute;
-		top: 80px;
-		left: 0px;
 	}
 	.field .copyright{
 		font-size: 10px;
@@ -214,7 +210,7 @@ canvas {
 	.footer img{
 		height: 101%;
 		width: 101%;
-		transform: translateY(20px);
+		transform: translateY(-50px);
 	}
 }
 
@@ -261,19 +257,27 @@ canvas {
 	}
 
 	.header .chu img{
-		margin-left: 40%;
+		margin-left: 20%;
 		height: 70%;
 		width: 70%;
 	}
- 	.field .container .svgLogo{
+
+	/*FIELD*/
+	.field{
+		margin-top: 10%;
+	}
+	.field .container .svgLogo{
+		height: 100%;
+		width: 100%;
+		position: absolute;
 		top: 0;
 		left: 50%;
 		transform: translateX(-50%);
-		height: 120%;
-		width: 120%;
 		opacity: 0.4;
 	}
+
 	.field h1{
+		padding-top: 30%;
 		font-size: 20px;
 		padding-left: 0px;
 	}
@@ -285,18 +289,6 @@ canvas {
 	.field .time p{
 		font-size: 12px;
 		padding-left: 0px;
-	}
-	.field{
-		position: absolute;
-		top: 80px;
-		left: 0px;
-	}
-	.content{
-		margin-top: 40%;
-		margin-left: 20%;
-	}
-	.content{
-
 	}
 	.field .copyright{
 		font-size: 10px;
@@ -313,6 +305,26 @@ canvas {
 		height: 101%;
 		width: 101%;
 		transform: translateY(20px);
+	}
+
+	/*visualizer*/
+	#fileWrapper{
+		z-index: 100;
+		transition:all 0.5s ease;
+	}
+	#fileWrapper:hover{
+		opacity: 1!important;
+	}
+
+	#visualizer_wrapper{
+		position: absolute;
+	}
+	.cus{
+	    cursor: pointer;
+	    color: white;
+	}
+	#fileWrapper input[type="file"]{
+		display: none;
 	}
 }
  
@@ -340,6 +352,73 @@ canvas {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+  	html, body{
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+	}
+  	.header .pick img{
+		margin-left: 0%;
+		height: 70%;
+		width: 70%;
+	}
+
+	.header .year img{
+		margin-left: 20%;
+		height: 80%;
+		width: 80%;
+	}
+
+	.header .chu img{
+		margin-left: 20%;
+		height: 70%;
+		width: 70%;
+	}
+
+	/*FIELD*/
+	.field{
+		margin-top: 10%;
+	}
+	.field .container .svgLogo{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		opacity: 0.4;
+	}
+
+	.field h1{
+		padding-top: 30%;
+		font-size: 20px;
+		padding-left: 0px;
+	}
+	.field .time h2{
+		font-size: 40px;
+		padding-left: 0px;
+		padding-top: 0px;
+	}
+	.field .time p{
+		font-size: 12px;
+		padding-left: 0px;
+	}
+	.field .copyright{
+		font-size: 10px;
+		padding-top: 20%;
+		padding-left: 0px;
+	}
+	/*FOOTER*/
+	.footer{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	.footer img{
+		height: 101%;
+		width: 101%;
+		transform: translateY(20px);
+	}
 }
  
 /* Landscape */
@@ -367,6 +446,73 @@ canvas {
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+  	html, body{
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+	}
+  	.header .pick img{
+		margin-left: 0%;
+		height: 70%;
+		width: 70%;
+	}
+
+	.header .year img{
+		margin-left: 20%;
+		height: 80%;
+		width: 80%;
+	}
+
+	.header .chu img{
+		margin-left: 20%;
+		height: 70%;
+		width: 70%;
+	}
+
+	/*FIELD*/
+	.field{
+		margin-top: 10%;
+	}
+	.field .container .svgLogo{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		opacity: 0.4;
+	}
+
+	.field h1{
+		padding-top: 30%;
+		font-size: 20px;
+		padding-left: 0px;
+	}
+	.field .time h2{
+		font-size: 40px;
+		padding-left: 0px;
+		padding-top: 0px;
+	}
+	.field .time p{
+		font-size: 12px;
+		padding-left: 0px;
+	}
+	.field .copyright{
+		font-size: 10px;
+		padding-top: 20%;
+		padding-left: 0px;
+	}
+	/*FOOTER*/
+	.footer{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	.footer img{
+		height: 101%;
+		width: 101%;
+		transform: translateY(20px);
+	}
 }
  
 /* Landscape */
