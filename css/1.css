@@ -26,7 +26,36 @@ body{
 	height: 30%;
 	width: 30%;
 }
-
+.options{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 5%;
+	z-index: 1000;
+}
+.options .snowClick{
+	background: none;
+	border: none;
+	box-shadow: none;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+.options .speaker{
+	background: none;
+	border: none;
+	box-shadow: none;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+.options .mute{
+	background: none;
+	border: none;
+	box-shadow: none;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
 /*FIELD*/
 .field h1{
 	text-transform: capitalize;
@@ -34,7 +63,8 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	color: white;
 	padding-left: 200px;
-}.field .container .svgLogo path,polygon{
+}
+.field .container .svgLogo path,polygon{
 	fill: none;
 	stroke: white;
 }
@@ -70,7 +100,6 @@ body{
 	padding-top: 40px;
 	padding-left: 25%;
 }
-
 
 /*FOOTER*/
 .footer{
@@ -167,7 +196,19 @@ canvas {
 		height: 70%;
 		width: 70%;
 	}
-
+	.options{
+		position: absolute;
+		top: 80%;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 1000;
+	}
+	.options .speaker{
+		font-size: 15px;
+	}
+	.options .snowClick{
+		font-size: 15px;
+	}
 	/*FIELD*/
 	.field{
 		margin-top: 10%;
@@ -197,9 +238,7 @@ canvas {
 		padding-left: 0px;
 	}
 	.field .copyright{
-		font-size: 10px;
-		padding-top: 20%;
-		padding-left: 0px;
+		font-size: 20px;
 	}
 	/*FOOTER*/
 	.footer{
@@ -261,7 +300,19 @@ canvas {
 		height: 70%;
 		width: 70%;
 	}
-
+	.options{
+		position: absolute;
+		top: 80%;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 1000;
+	}
+	.options .speaker{
+		font-size: 15px;
+	}
+	.options .snowClick{
+		font-size: 15px;
+	}
 	/*FIELD*/
 	.field{
 		margin-top: 10%;
@@ -374,7 +425,19 @@ canvas {
 		height: 70%;
 		width: 70%;
 	}
-
+	.options{
+		position: absolute;
+		top: 80%;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 1000;
+	}
+	.options .speaker{
+		font-size: 15px;
+	}
+	.options .snowClick{
+		font-size: 15px;
+	}
 	/*FIELD*/
 	.field{
 		margin-top: 10%;
@@ -401,11 +464,6 @@ canvas {
 	}
 	.field .time p{
 		font-size: 12px;
-		padding-left: 0px;
-	}
-	.field .copyright{
-		font-size: 10px;
-		padding-top: 20%;
 		padding-left: 0px;
 	}
 	/*FOOTER*/

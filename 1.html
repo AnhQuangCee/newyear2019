@@ -15,11 +15,20 @@
 <body >
 	<!-- <canvas class="fireworks"></canvas> -->
 	<div style="visibility:hidden">
-	<audio autoplay loop>
+	<audio autoplay loop class="audio">
 	    <source src="audio/Orange.mp3">
 	</audio> 
 	</div>
 	<canvas id="c" class="hello"></canvas>
+	<div class="options">
+	<div class="btn btn-success snowClick">
+		<i class="far fa-snowflake"></i> Snow
+	</div>
+	<br>
+	<div class="btn btn-success speaker">
+		<i class="fas fa-volume-up"></i> Sound
+	</div>
+	</div>
 	<div class="header">
 		<div class="container">
 			<div class="row">
@@ -43,8 +52,8 @@
 	</div>
 
 	<div class="section">
-		<div class="snow1" style="background:url(images/snow.png);"></div>
-		<div class="snow2" style="background:url(images/snow.png);"></div>
+		<div class="snow" style="background:url(images/snow.png);"></div>
+		<div class="snow" style="background:url(images/snow.png);"></div>
 	</div>
 	<div class="field">
 		<div class="container">
@@ -97,9 +106,9 @@
 								<p class="info" id="senconds1">Seconds</p>
 							</div>
 						</div>
-						<!-- <div class="row copyright">
-							<p>Copyright <i class="far fa-copyright"></i> by DAQ Website 2019</p>
-						</div>-->
+						 <div class="row copyright">
+							<p>Development by DAQ</p>
+						</div>
 				</div>
 			</div>
 		</div>

@@ -8,18 +8,23 @@ var svgLogo6 = document.querySelector('.svgLogo polygon.p0');
 var svgLogo7 = document.querySelector('.svgLogo text.t1');
 var svgLogo5 = document.querySelector('.svgLogo path.st5');
 
-// $(document).keydown(function(event){
-//     if(event.keyCode==123){
-//         return false;
-//     }
-//     else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
-//              return false;
-//     }
-// });
+//Open-Close Snow Effect
+var snow = document.querySelector('.snowClick');
+var snowDisplay = document.querySelectorAll('.snow');
+snow.onclick = function(){
+    snowDisplay[0].classList.toggle('snow1');
+};
 
-// $(document).on("contextmenu",function(e){        
-//    e.preventDefault();
-// });
+//Mute Sound
+var speaker = document.querySelector('.speaker');
+var audio = document.querySelector('.audio');
+speaker.onclick = function(){
+    if(audio.muted == false){
+        audio.muted = true;
+    } else{
+        audio.muted = false;
+    }
+};
 
 var svgLogoAnimation = anime.timeline();
 svgLogoAnimation.add({
