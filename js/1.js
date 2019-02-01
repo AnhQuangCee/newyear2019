@@ -13,13 +13,18 @@ svgLogoAnimation.add({
 	targets: svgLogo,
 	strokeDashoffset:[anime.setDashoffset, 0],
 	duration: 2000,
-	easing: 'easeOutSine'
+	easing: 'easeOutSine',
+  direction: 'alternate',
+  loop: true,
+  delay: 1000
 });
 svgLogoAnimation.add({
 	targets: svgLogo1,
 	strokeDashoffset:[anime.setDashoffset, 0],
 	duration: 2000,
-	easing: 'easeOutSine'
+	easing: 'easeOutSine',
+  direction: 'alternate',
+  loop: true
 });svgLogoAnimation.add({
 	targets: svgLogo2,
 	strokeDashoffset:[anime.setDashoffset, 0],
@@ -29,28 +34,38 @@ svgLogoAnimation.add({
 	targets: svgLogo3,
 	strokeDashoffset:[anime.setDashoffset, 0],
 	duration: 2000,
-	easing: 'easeOutSine'
+	easing: 'easeOutSine',
+  direction: 'alternate',
+  loop: true
 });svgLogoAnimation.add({
 	targets: svgLogo4,
 	strokeDashoffset:[anime.setDashoffset, 0],
 	duration: 2000,
-	easing: 'easeOutSine'
+	easing: 'easeOutSine',
+  direction: 'alternate',
+  loop: true
 });
 svgLogoAnimation.add({
 	targets: svgLogo5,
 	strokeDashoffset:[anime.setDashoffset, 0],
 	duration: 2000,
-	easing: 'easeOutSine'
+	easing: 'easeOutSine',
+  direction: 'alternate',
+  loop: true
 });
 svgLogoAnimation.add({
 	targets: svgLogo6,
-	opacity: [0,1]
+	opacity: [0,1],
+  direction: 'alternate',
+  loop: true
 });
 svgLogoAnimation.add({
 	targets: svgLogo7,
 	opacity: [0,1],
 	duration: 2000,
-	easing: 'easeOutSine'
+	easing: 'easeOutSine',
+  direction: 'alternate',
+  loop: true
 });
 
 //Open-Close Snow Effect

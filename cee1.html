@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title> DAQ - Happy New Year 2019 </title>
+	<link rel="shortcut icon" href="images/logodaq_shortcut.png" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" href="vendor/bootstrap.css">
+	<link rel="stylesheet" href="css/snow.css">
+	<link rel="stylesheet" href="css/1.css">
+</head>
+<body >
+	<!-- <canvas class="fireworks"></canvas> -->
+	<div style="visibility:hidden">
+	<audio autoplay loop class="audio">
+	    <source src="audio/Orange.mp3">
+	</audio> 
+	</div>
+	<canvas id="c" class="hello"></canvas>
+	<div class="options">
+	<div class="btn btn-success snowClick">
+		<i class="far fa-snowflake"></i> Snow
+	</div>
+	<br>
+	<div class="btn btn-success speaker">
+		<i class="fas fa-volume-up"></i> Sound
+	</div>
+	<br>
+	<div class="dropdown">
+	    <button class="btn btn-default dropdown-toggle more" type="button" data-toggle="dropdown"><i class="fas fa-cog"></i> Options</button>
+	    <ul class="dropdown-menu">
+	      <li><a href="cee2.html">CEE-Visualizer</a></li>
+	      <li><a href="index.html">DAQ</a></li>
+	      <li><a href="visualizer.html">DAQ-Visualizer</a></li>
+	    </ul>
+		</div>
+	</div>
+	</div>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-xs-4">
+					<div class="pick">
+						<img src="images/pick.png" alt="">
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-4">	
+					<div class="year">
+						<img src="images/2019.png" alt="">
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-4">	
+					<div class="chu">
+						<img src="images/chu.png" alt="">
+					</div>		
+				</div>	
+			</div>
+		</div>	
+	</div>
+
+	<div class="section">
+		<div class="snow" style="background:url(images/snow.png);"></div>
+		<div class="snow" style="background:url(images/snow.png);"></div>
+	</div>
+	<div class="field">
+		<div class="container">
+				<div class="col-md-12 col-xs-12 text-center">
+					<div class="background"></div>
+					<div class="content">
+					<div class="col-md-4 col-xs-12">
+						<div class="svgLogo cee1">
+							<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 viewBox="0 0 330 413.5" style="enable-background:new 0 0 330 413.5;" xml:space="preserve">
+							<polygon id="XMLID_2_" class="st0" points="8.5,111.2 322.5,7.3 322.5,226 287.5,238 287.5,310 226,330.2 225.3,259.3 205.7,266.2 
+								206,310 143.5,330.2 143.5,286 120.5,293.7 120.6,309.8 57.5,329.8 57.5,314.5 8.5,331.7 "/>
+							<polygon id="XMLID_6_" class="st1" points="26.5,304.1 26.3,124.7 305.5,32.7 305.5,213 287.5,219.5 287.5,127 224,152.8 
+								223.9,239.5 205.5,246.1 205.5,128 142.5,153.2 142.5,267 120.3,274.8 120.6,128 57.5,153 57.5,295 26.5,305.4 "/>
+							</svg>	
+						</div>
+					</div>
+					<div class="col-md-8 col-xs-12 text-center countdown">
+						<h1>Happy new year</h1>
+						<div class="row time text">
+							<div class="col-md-3 col-xs-3">
+								<h2 id="day">5</h2>
+								<p class="info" id="day1">Days</p>
+							</div>
+							<div class="col-md-3 col-xs-3">
+								<h2 id="hours">19</h2>
+								<p class="info" id="hours1">Hours</p>
+							</div>
+							<div class="col-md-3 col-xs-3">
+								<h2 id="minutes">40</h2>
+								<p class="info" id="minutes1">Minutes</p>
+							</div>
+							<div class="col-md-3 col-xs-3">
+								<h2 id="senconds">55</h2>
+								<p class="info" id="senconds1">Seconds</p>
+							</div>
+						</div>
+						 <div class="row copyright">
+							<p>Development by DAQ</p>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end field -->
+<div class="footer">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 wave">
+				<img src="images/wave.png" class="img-responsive" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- <script src="js/visualizer.js" type="text/javascript"></script> -->
+<script src="js/anime.js"></script>
+<script src="js/cee1.js"></script>
+</body>
+</html>

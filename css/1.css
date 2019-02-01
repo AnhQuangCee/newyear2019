@@ -56,6 +56,22 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	color: white;
 }
+.options .more{
+	background: none;
+	border: none;
+	box-shadow: none;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+.options .more:focus{
+	background: none;
+	border: none;
+	box-shadow: none;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
 /*FIELD*/
 .field h1{
 	text-transform: capitalize;
@@ -77,6 +93,11 @@ body{
 	left: 0;
 	height: 100%;
 	width: 100%;
+}
+.field .container .cee1{
+	height: 80%;
+	width: 80%;
+	margin-left: 20%;
 }
 
 .field .time h2{
@@ -222,7 +243,16 @@ canvas {
 		transform: translateX(-50%);
 		opacity: 0.4;
 	}
-
+	.field .container .cee1{
+		height: 80%;
+		width: 80%;
+		position: absolute;
+		margin-left: 0px;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		opacity: 0.4;
+	}
 	.field h1{
 		padding-top: 30%;
 		font-size: 20px;
@@ -238,7 +268,10 @@ canvas {
 		padding-left: 0px;
 	}
 	.field .copyright{
-		font-size: 20px;
+		font-size: 14px;
+		margin-top: 30%;
+		padding-top: 0;
+		padding-left: 0;
 	}
 	/*FOOTER*/
 	.footer{
@@ -326,7 +359,16 @@ canvas {
 		transform: translateX(-50%);
 		opacity: 0.4;
 	}
-
+	.field .container .cee1{
+		height: 80%;
+		width: 80%;
+		position: absolute;
+		margin-left: 0px;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		opacity: 0.4;
+	}
 	.field h1{
 		padding-top: 30%;
 		font-size: 20px;
@@ -342,9 +384,10 @@ canvas {
 		padding-left: 0px;
 	}
 	.field .copyright{
-		font-size: 10px;
-		padding-top: 20%;
-		padding-left: 0px;
+		font-size: 16px;
+		margin-top: 30%;
+		padding-top: 0;
+		padding-left: 0;
 	}
 	/*FOOTER*/
 	.footer{
@@ -439,9 +482,7 @@ canvas {
 		font-size: 15px;
 	}
 	/*FIELD*/
-	.field{
-		margin-top: 10%;
-	}
+	
 	.field .container .svgLogo{
 		height: 100%;
 		width: 100%;
@@ -451,7 +492,16 @@ canvas {
 		transform: translateX(-50%);
 		opacity: 0.4;
 	}
-
+	.field .container .cee1{
+		height: 80%;
+		width: 80%;
+		position: absolute;
+		margin-left: 0px;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		opacity: 0.4;
+	}
 	.field h1{
 		padding-top: 30%;
 		font-size: 20px;
@@ -540,7 +590,16 @@ canvas {
 		transform: translateX(-50%);
 		opacity: 0.4;
 	}
-
+	.field .container .cee1{
+		height: 80%;
+		width: 80%;
+		position: absolute;
+		margin-left: 0px;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		opacity: 0.4;
+	}
 	.field h1{
 		padding-top: 30%;
 		font-size: 20px;
@@ -556,10 +615,12 @@ canvas {
 		padding-left: 0px;
 	}
 	.field .copyright{
-		font-size: 10px;
-		padding-top: 20%;
-		padding-left: 0px;
+		font-size: 16px;
+		margin-top: 30%;
+		padding-top: 0;
+		padding-left: 0;
 	}
+	
 	/*FOOTER*/
 	.footer{
 		position: absolute;
