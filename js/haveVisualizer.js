@@ -72,7 +72,7 @@ svgLogoAnimation.add({
 });
 // Feb 5, 2019 00:00:00
 //DAQ Counntdown web 2019
-var countDownDate = new Date("Feb 5, 2019 00:00:00").getTime();
+var countDownDate = new Date("Jan 1, 2020 00:00:00").getTime();
 var x = setInterval(function(){
 	var now = new Date().getTime();
 	var distance = countDownDate - now;
